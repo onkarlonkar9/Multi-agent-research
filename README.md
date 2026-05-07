@@ -43,30 +43,40 @@ Final Research Report
 Each agent has a dedicated responsibility:
 AgentResponsibilitySearch AgentSearches relevant information from the webReader AgentExtracts and summarizes useful contentWriter AgentCreates structured research reportsCritic AgentReviews and improves report quality
 
-📂 Project Structure
-Multi-agent-research/│├── multi-agent-pipeline.py├── multi_agent/│   ├── __init__.py│   ├── agents.py│   ├── prompts.py│   ├── utils.py│├── ui.png├── requirements.txt├── README.md└── .env
 
 ⚙️ Installation
 1️⃣ Clone Repository
+```bash
 git clone https://github.com/onkarlonkar9/Multi-agent-research.gitcd Multi-agent-research
+```
 
 2️⃣ Create Virtual Environment
 Windows
+```bash
 python -m venv venvvenv\Scripts\activate
+```
 Linux / Mac
+```bash
 python3 -m venv venvsource venv/bin/activate
+```
 
 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 🔑 Environment Variables
 Create a .env file in the root directory.
 Example:
+```bash
 OPENAI_API_KEY=your_api_keyTAVILY_API_KEY=your_api_key
+```
 
 ▶️ Usage
 Run the pipeline:
+```bash
 python multi-agent-pipeline.py
+```
 Then enter your research topic:
 Enter a research topic: Cloud Computing
 
